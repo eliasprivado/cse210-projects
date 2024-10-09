@@ -13,7 +13,8 @@ class Program
         job1._startYear = 2020;
         job1._endYear = 2024;
 
-        job1.Display();
+        //Print
+        //job1.Display();
 
         //Second job
         Job job2 = new Job();
@@ -23,9 +24,16 @@ class Program
         job2._startYear = 2018;
         job2._endYear = 2021;
 
-        job2.Display();
+        //Print
+        //job2.Display();
 
         //Adding Resume class to main program
-        //newResume._jobs.Add(job1);
+        Resume newResume = new Resume();
+        newResume._name = "Elias Gutierrez";
+
+        newResume._jobs.Add(job1);
+        newResume._jobs.Add(job2);
+
+        newResume.Display();
     }
 }
